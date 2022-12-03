@@ -4,7 +4,7 @@ var cors = require('cors');
 
 const corsOptions ={
     origin:'https://coffee-delivery-by-biancahoffer.vercel.app/', 
-    //credentials:true,            //access-control-allow-credentials:true
+    credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
 
