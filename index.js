@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+var cors = require('cors')
 const port = process.env.PORT /*Heroku*/ || 8080;
 
 const coffees = require("./src/coffees/coffee.json")
@@ -11,3 +12,7 @@ app.get("/coffees", (req, res) => {
 app.listen(port, () => { // Heroku
     console.log("Servidor rodando.")
 }); 
+
+app.use(cors())
+
+//
